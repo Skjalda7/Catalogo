@@ -26,12 +26,12 @@ busqueda = input("Casting buscado: ")
 
 
 
+'''' el método read_sql por defecto lee únicamente el método connect de sqlalchemy'''
+''' Además los modelos los creaste con SQL alchemy por lo que lo ideal es que sigas con esa metodología'''
 
+''' algo que podrías realizar paraque la query funcione respecto a la búsqueda es crear un f string asi: '''
 
-
-
-
-
+Query = f'SELECT * FROM CATALOGO WHERE CASTING = {busqueda}'
 
 
 
